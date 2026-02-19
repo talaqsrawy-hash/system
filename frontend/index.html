@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Vendor E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">MultiVendor</div>
+    <div class="menu" id="navbar-menu">
+      <!-- Dynamic menu rendered by JS -->
+    </div>
+  </nav>
+  <div class="container">
+    <div id="login-section">
+      <h2>Login</h2>
+      <button class="btn" onclick="loginAs('BUYER')">Login as Buyer</button>
+      <button class="btn" onclick="loginAs('SELLER')">Login as Seller</button>
+    </div>
+    <div id="main-content" style="display:none;">
+      <h1>Shop by Category</h1>
+      <div class="grid" id="category-grid">
+        <!-- Categories rendered by JS -->
+      </div>
+    </div>
+  </div>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
