@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace Concierge</title>
+  <link rel="stylesheet" href="../assets/css/home.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,500,700|Poppins:600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar-home">
+    <div class="logo">Marketplace</div>
+    <div class="nav-icons">
+      <a href="login.html" title="Login"><img src="../assets/images/login.svg" alt="Login"></a>
+      <a href="cart.html" title="Cart"><img src="../assets/images/cart.svg" alt="Cart"><span id="cart-badge">0</span></a>
+    </div>
+  </nav>
+  <main class="concierge-main">
+    <h1 class="concierge-title">What are you looking for today?</h1>
+    <div class="concierge-cards" id="category-cards"></div>
+    <div class="concierge-search">
+      <input type="text" id="search-bar" placeholder="Search for a product..." autocomplete="off">
+      <div id="autocomplete-list"></div>
+    </div>
+  </main>
+  <footer class="footer">
+    <span>&copy; 2026 Marketplace. All rights reserved.</span>
+  </footer>
+  <script src="../assets/js/categories.js"></script>
+  <script src="../assets/js/home.js"></script>
+</body>
+</html>

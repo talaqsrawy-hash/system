@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Marketplace</title>
+  <link rel="stylesheet" href="../assets/css/auth.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,500,700|Poppins:600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar-home">
+    <div class="logo">Marketplace</div>
+  </nav>
+  <main class="auth-main">
+    <h1 class="auth-title">Login</h1>
+    <form id="login-form">
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit" class="btn-primary">Login</button>
+      <div class="auth-links">
+        <a href="register.html">Create an account</a>
+      </div>
+    </form>
+    <div id="auth-error" class="auth-error"></div>
+  </main>
+  <footer class="footer">
+    <span>&copy; 2026 Marketplace. All rights reserved.</span>
+  </footer>
+  <script src="../assets/js/auth.js"></script>
+  <script src="../assets/js/login.js"></script>
+</body>
+</html>

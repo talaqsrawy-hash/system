@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category - Marketplace</title>
+  <link rel="stylesheet" href="../assets/css/category.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,500,700|Poppins:600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar-full">
+    <div class="logo" onclick="window.location.href='index.html'">Marketplace</div>
+    <a href="index.html" class="all-categories-link">All Categories</a>
+    <input type="text" class="search-bar" placeholder="Search products...">
+    <div class="nav-icons">
+      <a href="cart.html" title="Cart"><img src="../assets/images/cart.svg" alt="Cart"><span id="cart-badge">0</span></a>
+      <a href="login.html" title="Login"><img src="../assets/images/login.svg" alt="Login"></a>
+    </div>
+  </nav>
+  <div class="breadcrumb" id="breadcrumb"></div>
+  <main class="category-main">
+    <aside class="category-sidebar" id="sidebar"></aside>
+    <section class="category-content">
+      <h1 class="category-title" id="category-title"></h1>
+      <div class="category-sort">
+        <label for="sort-select">Sort:</label>
+        <select id="sort-select">
+          <option value="newest">Newest</option>
+          <option value="price-low">Price Low-High</option>
+          <option value="price-high">Price High-Low</option>
+          <option value="popular">Most Popular</option>
+        </select>
+      </div>
+      <div class="category-products" id="products-grid"></div>
+      <div class="category-pagination" id="pagination"></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <span>&copy; 2026 Marketplace. All rights reserved.</span>
+  </footer>
+  <script src="../assets/js/categories.js"></script>
+  <script src="../assets/js/category-page.js"></script>
+</body>
+</html>
