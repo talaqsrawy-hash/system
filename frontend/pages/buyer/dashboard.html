@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buyer Dashboard - Marketplace</title>
+  <link rel="stylesheet" href="../../assets/css/dashboard.css">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,500,700|Poppins:600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar-full">
+    <div class="logo" onclick="window.location.href='../index.html'">Marketplace</div>
+    <a href="../index.html" class="all-categories-link">All Categories</a>
+    <input type="text" class="search-bar" placeholder="Search products...">
+    <div class="nav-icons">
+      <a href="../cart.html" title="Cart"><img src="../../assets/images/cart.svg" alt="Cart"><span id="cart-badge">0</span></a>
+      <a href="../login.html" title="Login"><img src="../../assets/images/login.svg" alt="Login"></a>
+    </div>
+  </nav>
+  <main class="dashboard-main">
+    <aside class="dashboard-sidebar">
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="orders.html">My Orders</a></li>
+        <li><a href="profile.html">My Profile</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </aside>
+    <section class="dashboard-content">
+      <h1>Welcome, Buyer!</h1>
+      <div class="dashboard-summary">
+        <div class="dashboard-card">Orders: <span id="order-count">0</span></div>
+        <div class="dashboard-card">Total Spent: $<span id="total-spent">0.00</span></div>
+      </div>
+      <div id="dashboard-orders"></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <span>&copy; 2026 Marketplace. All rights reserved.</span>
+  </footer>
+  <script src="../../assets/js/buyer-dashboard.js"></script>
+</body>
+</html>

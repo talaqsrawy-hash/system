@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Marketplace</title>
+  <link rel="stylesheet" href="../assets/css/cart.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,500,700|Poppins:600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar-full">
+    <div class="logo" onclick="window.location.href='index.html'">Marketplace</div>
+    <a href="index.html" class="all-categories-link">All Categories</a>
+    <input type="text" class="search-bar" placeholder="Search products...">
+    <div class="nav-icons">
+      <a href="cart.html" title="Cart"><img src="../assets/images/cart.svg" alt="Cart"><span id="cart-badge">0</span></a>
+      <a href="login.html" title="Login"><img src="../assets/images/login.svg" alt="Login"></a>
+    </div>
+  </nav>
+  <main class="cart-main">
+    <h1 class="cart-title">Shopping Cart</h1>
+    <div id="cart-items"></div>
+    <aside class="cart-summary" id="cart-summary"></aside>
+    <button class="btn-primary" id="checkout-btn">Proceed to Checkout</button>
+  </main>
+  <footer class="footer">
+    <span>&copy; 2026 Marketplace. All rights reserved.</span>
+  </footer>
+  <script src="../assets/js/cart.js"></script>
+</body>
+</html>

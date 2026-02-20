@@ -1,0 +1,71 @@
+/* invoice.css: Invoice detail page styles */
+body {
+  background: #F8FAFC;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #1E293B;
+}
+.invoice-main {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.07);
+  padding: 2rem;
+}
+.invoice-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.invoice-header {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+.invoice-table th, .invoice-table td {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+.invoice-table th {
+  background: #F1F5F9;
+}
+.invoice-summary {
+  margin-bottom: 1.5rem;
+}
+.invoice-status {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.btn-primary {
+  background: #2563EB;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-primary:hover {
+  background: #1E40AF;
+}
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+  color: #64748B;
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+@media print {
+  .navbar-full, .footer, .btn-primary { display: none !important; }
+  .invoice-main { box-shadow: none; margin: 0; }
+}

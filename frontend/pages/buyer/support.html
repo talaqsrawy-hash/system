@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support Tickets - Marketplace</title>
+  <link rel="stylesheet" href="../../assets/css/support.css">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,500,700|Poppins:600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar-full">
+    <div class="logo" onclick="window.location.href='../index.html'">Marketplace</div>
+    <a href="../index.html" class="all-categories-link">All Categories</a>
+    <input type="text" class="search-bar" placeholder="Search products...">
+    <div class="nav-icons">
+      <a href="../cart.html" title="Cart"><img src="../../assets/images/cart.svg" alt="Cart"><span id="cart-badge">0</span></a>
+      <a href="../login.html" title="Login"><img src="../../assets/images/login.svg" alt="Login"></a>
+    </div>
+  </nav>
+  <main class="support-main">
+    <h1 class="support-title">Support Tickets</h1>
+    <button class="btn-primary" id="create-ticket-btn">Create New Ticket</button>
+    <div id="support-tickets"></div>
+    <div id="ticket-modal" class="modal" style="display:none;"></div>
+  </main>
+  <footer class="footer">
+    <span>&copy; 2026 Marketplace. All rights reserved.</span>
+  </footer>
+  <script src="../../assets/js/support.js"></script>
+</body>
+</html>

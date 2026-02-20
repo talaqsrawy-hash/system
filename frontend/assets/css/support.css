@@ -1,0 +1,57 @@
+/* support.css: Support ticket page styles */
+body {
+  background: #F8FAFC;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #1E293B;
+}
+.support-main {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.07);
+  padding: 2rem;
+}
+.support-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.btn-primary {
+  background: #2563EB;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-primary:hover {
+  background: #1E40AF;
+}
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(30,41,59,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.modal-content {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.07);
+  padding: 2rem;
+  min-width: 350px;
+}
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+  color: #64748B;
+  font-size: 1rem;
+  padding: 1rem 0;
+}

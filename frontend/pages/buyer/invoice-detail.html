@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice Detail - Marketplace</title>
+  <link rel="stylesheet" href="../../assets/css/invoice.css">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,500,700|Poppins:600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar-full">
+    <div class="logo" onclick="window.location.href='../index.html'">Marketplace</div>
+    <a href="../index.html" class="all-categories-link">All Categories</a>
+    <input type="text" class="search-bar" placeholder="Search products...">
+    <div class="nav-icons">
+      <a href="../cart.html" title="Cart"><img src="../../assets/images/cart.svg" alt="Cart"><span id="cart-badge">0</span></a>
+      <a href="../login.html" title="Login"><img src="../../assets/images/login.svg" alt="Login"></a>
+    </div>
+  </nav>
+  <main class="invoice-main">
+    <h1 class="invoice-title">Invoice #INV-2026-00001</h1>
+    <div class="invoice-header">
+      <div class="invoice-seller">Seller: <span id="seller-info">Store Name</span></div>
+      <div class="invoice-buyer">Buyer: <span id="buyer-info">Buyer Name</span></div>
+      <div class="invoice-date">Date: <span id="invoice-date">2026-02-20</span></div>
+    </div>
+    <table class="invoice-table">
+      <thead>
+        <tr><th>Product</th><th>SKU</th><th>Qty</th><th>Unit Price</th><th>Subtotal</th></tr>
+      </thead>
+      <tbody id="invoice-items"></tbody>
+    </table>
+    <div class="invoice-summary">
+      <div>Subtotal: $<span id="subtotal">0.00</span></div>
+      <div>Shipping: $<span id="shipping">10.00</span></div>
+      <div>Tax: $<span id="tax">0.00</span></div>
+      <div><strong>Grand Total: $<span id="grand-total">0.00</span></strong></div>
+    </div>
+    <div class="invoice-status">Status: <span id="status-badge">Paid</span></div>
+    <button class="btn-primary" onclick="window.print()">Print Invoice</button>
+  </main>
+  <footer class="footer">
+    <span>&copy; 2026 Marketplace. All rights reserved.</span>
+  </footer>
+  <script src="../../assets/js/invoices.js"></script>
+</body>
+</html>
